@@ -2,10 +2,10 @@ from utils import get_data, get_executed_operations, get_last_operations, get_fo
 
 
 def main():
-    COUNT_LAST_OPERATIONS = 5
-    FILENAME = 'operations.json'
+    COUNT_LAST_OPERATIONS = 3
+    filename = 'operations.json'
 
-    data = get_data(FILENAME)
+    data = get_data(filename)
     data = get_executed_operations(data)
     data = get_last_operations(data, COUNT_LAST_OPERATIONS)
     data = get_formatted_data(data)
